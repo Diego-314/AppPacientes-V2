@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registrar paciente</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.0/dist/lux/bootstrap.min.css">
+	<style type="text/css">
+		body {
+			min-width: 800px;
+      place-content: center;
+      vertical-align: center;
+      text-align: center;
+      align-content: center;
+      min-height: 400px;
+      margin-top: 3%;
+      transition-duration: 1s;
+		}
+
+
+		input, textarea {
+			width:25%;
+			text-align: center;
+			display: flex;
+			margin: auto;
+		}
+
+		div {
+			width: 45%;
+			margin: auto;
+			margin-bottom: 3%;
+		}
+
+		label {
+			text-align: left;
+		}
+
+		textarea {
+			width: 45%;
+			margin-bottom: 3%;
+			border: none;
+			background-color: #f7f7f9;
+			text-align: left;
+			padding: 2%;
+		}
+
+		textarea:focus {
+			box-shadow: 0 0 0 4px #c6c6c7;
+			outline: none;
+		}
+
+		.form-check {
+			padding: 1%;
+			margin-bottom: 0%;
+			text-align: left;
+			place-content: center;
+			display: inline-block;
+			margin-left: 5%;
+			width: 45%;
+		}
+		.form-check > input {
+			
+		}
+
+		.form-check > label {
+			
+		}
+		
+
+	</style>
+</head>
+<body>
+
+	<legend>
+		Registrar paciente
+	</legend>
+
+	<div class="form-floating">
+    	<input type="text" class="form-control" id="nombrePaciente" placeholder="Nombre completo" autocomplete="off">
+    	<label for="nombrePaciente">Nombre completo</label>
+  	</div>
+	<div class="form-floating">
+    	<input type="text" class="form-control" id="dni" placeholder="DNI" autocomplete="off">
+    	<label for="dni">DNI</label>
+  	</div>
+	<div class="form-floating">
+    	<input type="number" class="form-control" id="age" placeholder="Edad" autocomplete="off">
+    	<label for="age">Edad</label>
+  	</div>
+
+
+
+  	<div class="form-floating">
+    	<input type="text" class="form-control" id="obraSocial" placeholder="Obra social" autocomplete="off">
+    	<label for="obraSocial">Obra social</label>
+  	</div>
+
+  	<div class="form-floating">
+    	<input type="number" class="form-control" id="numeroAfiliado" placeholder="Número de afiliado" autocomplete="off">
+    	<label for="numeroAfiliado">Número de afiliado</label>
+  	</div>
+
+  	<div class="form-floating">
+    	<input type="text" class="form-control" id="snc" placeholder="SNC" autocomplete="off">
+    	<label for="snc">SNC</label>
+  	</div>
+
+  	<div class="form-floating">
+    	<input type="text" class="form-control" id="lucidez" placeholder="Lucidez del paciente" autocomplete="off">
+    	<label for="lucidez">Lucidez del paciente</label>
+  	</div>
+
+
+  	<div class="form-floating">
+    	<input type="text" class="form-control" id="pirs" placeholder="PIRs" autocomplete="off">
+    	<label for="pirs">PIRs</label>
+  	</div>
+
+
+
+  	<div class="form-floating">
+    	<input type="text" class="form-control" id="r1/r2" placeholder="R1/R2" autocomplete="off">
+    	<label for="r1/r2">R1/R2</label>
+  	</div>
+
+  	<div class="form-floating">
+    	<input type="text" class="form-control" id="r3/r4" placeholder="R3/R4" autocomplete="off">
+    	<label for="r3/r4">R3/R4</label>
+  	</div>
+
+
+
+  	<div class="form-check">
+
+  		<label class="form-check-label" for="foncoMeningeo">
+          Fonco meningeo
+        </label>
+        <input class="form-check-input" type="checkbox" value="" id="foncoMeningeo">
+    
+    </div>
+
+    <div class="form-check" style="margin-bottom: 3%;">
+    	<label class="form-check-label" for="soplos">
+          Soplos
+        </label>
+        <input class="form-check-input" type="checkbox" value="" id="soplos">
+    </div>
+
+
+
+  	<!--   <label for="notas" style="text-align: left;">Notas del doctor</label>    -->
+  	<textarea id="notas" name="notas" placeholder="Notas del doctor"></textarea>
+  	
+
+
+
+
+
+
+
+  	<button id="btn" class="btn btn-primary" style="margin-bottom: 2%;">
+  		Registrar
+  	</button>
+
+  	<button id="btnCancel" class="btn btn-primary" style="margin-bottom: 2%;">
+  		Cancelar
+  	</button>
+
+
+<script src="registrar.js"></script>
+<script src="cancel.js"></script>
+</body>
+</html>

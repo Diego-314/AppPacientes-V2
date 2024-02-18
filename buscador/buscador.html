@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <title>
+      Aplicación de Pacientes
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.2/dist/lux/bootstrap.min.css">
+     <style type="text/css">
+    
+   body {
+      min-width: 800px;
+      place-content: center;;
+      text-align: center;
+      min-height: 400px;
+      margin-top: 24%;
+    }
+
+
+    input {
+      width:25%;
+      text-align: center;
+      display: flex;
+      margin: auto;
+    }
+
+    div {
+      width: 45%;
+      margin: auto;
+      margin-bottom: 3%;
+    }
+  </style>
+
+  </head>
+ 
+<body>
+   
+
+
+
+  <legend>Buscar paciente</legend>
+
+  <div class="form-floating">
+      <input type="text" class="form-control" id="nombrePaciente" placeholder="DNI/Nombre del paciente" autocomplete="off">
+      <label for="nombrePaciente">DNI/Nombre del paciente</label>
+  </div>
+
+<button class="btn btn-primary" style="margin-bottom: 3%;">Buscar</button>
+
+<datalist id="pacientes">
+</datalist>
+
+
+
+  <p style="text-align: center;">
+      ¿Nuevo paciente? <a href="#" id="registrar"><b>Regístralo<b></a>.
+  </p>
+
+<script src="./dataoption.js"></script>
+</body>
+
+
+</html>
