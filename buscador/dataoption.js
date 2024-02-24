@@ -4,9 +4,20 @@ const registrarLink = document.getElementById('registrar')
 
 
 try {
+	let data = '';
 	let pacientesString = localStorage.getItem('pacientes');
 	let pacientesObject = JSON.parse(pacientesString)
-	// Terminar el dataoption
+	for (let i = 0; i < pacientesObject.length; i++) 
+		{
+
+			data += `
+
+				<option value="${pacientesObject[i].dni}">${pacientesObject[i].name}</option>
+
+			`
+
+		};
+	datalist.innerHTML = data;
 } catch (e) {
 	console.log(e)
 }

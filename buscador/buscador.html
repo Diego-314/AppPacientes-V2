@@ -42,11 +42,11 @@
   <legend>Buscar paciente</legend>
 
   <div class="form-floating">
-      <input type="text" class="form-control" id="nombrePaciente" placeholder="DNI/Nombre del paciente" autocomplete="off">
+      <input type="text" class="form-control" id="nombrePaciente" placeholder="DNI/Nombre del paciente" autocomplete="off" list="pacientes">
       <label for="nombrePaciente">DNI/Nombre del paciente</label>
   </div>
 
-<button class="btn btn-primary" style="margin-bottom: 3%;">Buscar</button>
+<button class="btn btn-primary" style="margin-bottom: 3%;" id="searchBtn">Buscar</button>
 
 <datalist id="pacientes">
 </datalist>
@@ -58,6 +58,7 @@
   </p>
 
 <script src="./dataoption.js"></script>
+<script src="./searchBtn.js"></script>
 </body>
 
 

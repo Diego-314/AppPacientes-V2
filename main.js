@@ -38,3 +38,8 @@ ipcMain.on('register', () => {
 ipcMain.on('search', () => {
   createWindow()
 });
+
+ipcMain.on('view', (e,object) => { 
+  console.log('received');
+  console.log(object)
+});
